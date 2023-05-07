@@ -7,6 +7,9 @@
 html {
 	scroll-behavior: smooth;
 }
+body {
+    background-color: white;
+}
 nav {
     max-width: 100%;
     background-color: rgb(0, 0, 0);
@@ -336,10 +339,10 @@ footer {
         height: 400px;
     }
     .image .title {
-        font-size: 40px;
+        font-size: 35px;
     }
     .image .sub{
-        font-size: 20px;
+        font-size: 15px;
     }
     .endereco h1{
         font-size: 20px;
