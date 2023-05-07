@@ -8,7 +8,7 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-    background-color: white;
+    background-image: linear-gradient(white,white);
 }
 nav {
     max-width: 100%;
