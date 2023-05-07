@@ -8,6 +8,7 @@ html {
 	scroll-behavior: smooth;
 }
 nav {
+    max-width: 100%;
     background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
@@ -25,7 +26,9 @@ nav {
     margin-top: 10px;
     margin-bottom: 5px;
 }
-
+.toggle-button{
+    display: none;
+}
 .logo :hover {
     cursor: pointer;
 }
@@ -248,6 +251,97 @@ footer {
     align-items: center;
     padding-left: 10%;
     padding-right: 10%;
-    height: 50px;
+    height: px;
     background-color: rgba(241, 173, 0, 1);
+}
+
+@media screen and (max-width: 1024px){
+}
+@media screen and (max-width: 768px){
+}
+@media screen and (max-width: 580px){
+    nav {
+        padding-left: 2%;
+        padding-right: 2%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .mobile-nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .toggle-button {
+        display: flex;
+        cursor: pointer;
+    }
+    nav .navbar-links {
+        display: none;
+        width:100%;
+    }
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar-links ul li {
+        text-align: center;
+    }
+    .navbar-links.active{
+        display: flex;
+        padding-bottom: 10px;
+    }
+    li[name="btn"] {
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: transparent;
+        padding: 0;
+    }
+    nav ion-icon{
+        display: flex;
+        color: rgba(241, 173, 0, 1);
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    .logo {
+        margin-left: 20px;
+    }
+    .logo img{
+        height: 30px;
+    }
+    .caixas {
+        flex-wrap: wrap;
+    }
+    .box{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contato section{
+        flex-wrap: wrap;
+    }
+    .contato section > div{
+        width: 100%;
+    }
+    footer div{
+        display: flex;
+    }
+    footer ul{
+        display: none;
+    }
+    .image {
+        height: 400px;
+    }
+    .image img{
+        height: 400px;
+    }
+    .image .title {
+        font-size: 40px;
+    }
+    .image .sub{
+        font-size: 20px;
+    }
+    .endereco h1{
+        font-size: 20px;
+    }
 }
