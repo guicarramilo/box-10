@@ -2,13 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    forced-color-adjust: none;
     font-family: 'Signika Negative', sans-serif;
 }
 html {
 	scroll-behavior: smooth;
 }
 body {
-    background-image: linear-gradient(white,white);
+    background-color: white;
 }
 nav {
     max-width: 100%;
@@ -92,12 +93,14 @@ a:hover{
 .image img{
     max-width: 100%;
 }
-
-.image .title{
+.hero {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+}
+.image .title{
     font-size: 60px;
     font-weight: bolder;
     text-shadow: 2px 2px 4px #000000;
@@ -105,24 +108,20 @@ a:hover{
 }
 
 .image .sub{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, 70%);
     font-size: 30px;
     font-weight: lighter;
     text-shadow: 2px 2px 4px #000000;
-    animation: myAnim 5s ease 0s 1 normal forwards;
+    animation: myAnim 1s ease 0s 1 normal forwards;
 }
 @keyframes myAnim {
 	0% {
 		opacity: 0;
-		transform: translateY();
+		transform: translateY(50px);
 	}
 
 	100% {
 		opacity: 1;
-		transform: translateY();
+		transform: translateY(0);
 	}
 }
 .pqnos {
